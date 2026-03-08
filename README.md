@@ -7,6 +7,8 @@
 >
 > Also see the [issue watchlist](#issue-watchlist) below.
 
+<!-- scaffold:description -->
+
 A minimal monorepo starter for 🏝️ TanStack Start.
 
 - [Turborepo](https://turborepo.com/) + [pnpm](https://pnpm.io/)
