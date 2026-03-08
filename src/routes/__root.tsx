@@ -30,10 +30,12 @@ export const Route = createRootRouteWithContext<{
         content: "width=device-width, initial-scale=1",
       },
       {
+        // scaffold:title
         title: "TanStarter",
       },
       {
         name: "description",
+        // scaffold:description
         content: "A minimal starter template for 🏝️ TanStack Start.",
       },
     ],

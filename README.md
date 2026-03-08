@@ -3,6 +3,8 @@
 > [!TIP]
 > We're working on a monorepo version of this template with Turborepo. See the [`next` branch](https://github.com/mugnavo/tanstarter/tree/next) if you want to try it out. ([#45](https://github.com/mugnavo/tanstarter/pull/45))
 
+<!-- scaffold:description -->
+
 A minimal starter template for 🏝️ TanStack Start. [→ Preview here](https://tanstarter.mugnavo.com/)
 
 - [React 19](https://react.dev) + [React Compiler](https://react.dev/learn/react-compiler)
