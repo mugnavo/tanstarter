@@ -22,3 +22,5 @@ dist
 /public/build
 
 .tanstack
+/playwright-report/
+/test-results/
