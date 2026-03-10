@@ -32,13 +32,13 @@ export function IntroPageDeleteMe() {
     try {
       await navigator.clipboard.writeText(cloneCommand);
       setIsCopied(true);
-      toast.success("Command copied to clipboard");
+      toast.success("Command copied to clipboard", { position: "top-center" });
 
       setTimeout(() => {
         setIsCopied(false);
       }, 4000);
     } catch {
-      toast.error("Failed to copy command");
+      toast.error("Failed to copy command", { position: "top-center" });
     }
   };
 
