@@ -1,4 +1,5 @@
 /// <reference types="vite/client" />
+import fontWoff2 from "@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import type { QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
@@ -50,6 +51,14 @@ export const Route = createRootRouteWithContext<{
         href: "https://mugnavo.com/apple-touch-icon.png",
       },
       { rel: "stylesheet", href: appCss },
+      {
+        // Preload your font to minimize FOUC/FOUT
+        rel: "preload",
+        href: fontWoff2,
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
+      },
     ],
   }),
   component: RootComponent,
