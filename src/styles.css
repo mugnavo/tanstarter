@@ -125,7 +125,7 @@
     @apply bg-background font-sans text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply bg-background font-sans text-foreground;
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
