@@ -3,8 +3,10 @@ import {
   RiExternalLinkLine,
   RiFileCopyLine,
   RiGithubFill,
+  RiStarFill,
   RiTerminalLine,
 } from "@remixicon/react";
+import { useQuery } from "@tanstack/react-query";
 import { Link } from "@tanstack/react-router";
 import { Suspense } from "react";
 import { useState } from "react";
@@ -24,6 +26,7 @@ export function IntroPageDeleteMe() {
 
   const repoUrl = "https://github.com/mugnavo/tanstarter";
   const cloneCommand = "pnpm create mugnavo";
+  const fallbackStarsCount = 1000;
 
   const copyToClipboard = async () => {
     try {
@@ -54,7 +57,10 @@ export function IntroPageDeleteMe() {
                 tanstarter
               </span>
             </a>
-            <ThemeToggle />
+            <div className="flex items-center gap-2">
+              <RepoStarsBadge href={repoUrl} fallbackStarsCount={fallbackStarsCount} />
+              <ThemeToggle />
+            </div>
           </div>
 
           <h1 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
@@ -228,6 +234,66 @@ function Feature({ title, desc }: { title: string; desc: string }) {
       <p className="text-sm leading-relaxed text-muted-foreground">{desc}</p>
     </div>
   );
+}
+
+function RepoStarsBadge({
+  href,
+  fallbackStarsCount,
+}: {
+  href: string;
+  fallbackStarsCount: number;
+}) {
+  const { data } = useQuery({
+    queryKey: ["github-repo-stars"],
+    queryFn: ({ signal }) => fetchRepoStars({ signal }),
+    staleTime: 1000 * 60 * 30,
+    retry: 1,
+    enabled: typeof window !== "undefined",
+  });
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`${data ? data.toLocaleString() : `${fallbackStarsCount.toLocaleString()}+`} stars on GitHub`}
+      title={`${data ? data.toLocaleString() : `${fallbackStarsCount.toLocaleString()}+`} stars on GitHub`}
+      className="inline-flex items-stretch overflow-hidden rounded-md border border-border bg-card text-xs text-muted-foreground hover:brightness-90 sm:text-sm"
+    >
+      <span className="inline-flex items-center border-r border-border bg-muted px-2 font-medium sm:px-2.5">
+        <RiStarFill className="size-3 text-yellow-500 sm:size-3.5 dark:text-yellow-300" />
+      </span>
+      <span className="inline-flex items-center px-2 py-1.5 font-mono text-foreground sm:px-2.5">
+        {data ? data.toLocaleString() : `${fallbackStarsCount.toLocaleString()}+`}
+      </span>
+    </a>
+  );
+}
+
+async function fetchRepoStars({ signal }: { signal: AbortSignal | undefined }) {
+  const response = await fetch("https://api.github.com/repos/mugnavo/tanstarter", {
+    signal,
+    headers: {
+      Accept: "application/vnd.github+json",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch repository stars");
+  }
+
+  const data: unknown = await response.json();
+
+  if (
+    typeof data !== "object" ||
+    data === null ||
+    !("stargazers_count" in data) ||
+    typeof data.stargazers_count !== "number"
+  ) {
+    throw new Error("Invalid repository response");
+  }
+
+  return data.stargazers_count;
 }
 
 interface TechBadge {
