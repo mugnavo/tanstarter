@@ -1,4 +1,5 @@
 /// <reference types="vite/client" />
+import "@fontsource-variable/dm-sans/index.css";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import type { QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
