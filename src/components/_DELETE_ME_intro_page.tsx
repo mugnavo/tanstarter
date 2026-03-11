@@ -362,15 +362,10 @@ const PLATFORM_BADGES: TechBadge[] = [
     href: "https://vite.dev/blog/announcing-vite8-beta",
     src: "https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmugnavo%2Ftanstarter%2Fmain%2Fpackage.json&query=%24.devDependencies.vite&label=vite&style=flat-square",
   },
-  // {
-  //   alt: "Nitro version",
-  //   href: "https://v3.nitro.build/",
-  //   src: "https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmugnavo%2Ftanstarter%2Fmain%2Fpackage.json&query=%24.dependencies.nitro&label=nitro%20v3&style=flat-square",
-  // },
   {
     alt: "Nitro version",
-    href: "https://v3.nitro.build/",
-    src: "https://img.shields.io/badge/nitro-v3--nightly-blue?style=flat-square",
+    href: "https://nitro.build/",
+    src: "https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmugnavo%2Ftanstarter%2Fmain%2Fpackage.json&query=%24.devDependencies.nitro&label=nitro&style=flat-square",
   },
 ];
 

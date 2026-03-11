@@ -45,10 +45,6 @@ export const Route = createRootRouteWithContext<{
         rel: "icon",
         href: "https://mugnavo.com/favicon.ico",
       },
-      {
-        rel: "apple-touch-icon",
-        href: "https://mugnavo.com/apple-touch-icon.png",
-      },
       { rel: "stylesheet", href: appCss },
     ],
   }),
