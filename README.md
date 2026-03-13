@@ -60,7 +60,6 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 - [Router/Start issues](https://github.com/TanStack/router/issues) - TanStack Start is in RC.
 - [Devtools releases](https://github.com/TanStack/devtools/releases) - TanStack Devtools is in alpha and may still have breaking changes.
 - [Nitro v3 beta](https://nitro.build/blog/v3-beta) - The template is configured with Nitro v3 beta by default.
-- [@vitejs/plugin-react](https://github.com/rolldown/plugins/issues/10) - We're using an old version (5.2.0) of this plugin as a temporary workaround for [this issue](https://github.com/rolldown/plugins/issues/10). See `vite.config.ts` and upgrade to ^6.0.0 once it's resolved.
 
 ## Goodies
 
