@@ -68,7 +68,6 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 We use [Husky](https://typicode.github.io/husky/) to run git hooks with the following tools:
 
 - [lint-staged](https://github.com/lint-staged/lint-staged) - Run Oxfmt to format staged files on commit (`pre-commit`).
-- [commitlint](https://commitlint.js.org/) - Enforce [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) messages (`commit-msg`).
 
 #### Scripts
 
