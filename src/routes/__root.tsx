@@ -1,4 +1,4 @@
-/// <reference types="vite/client" />
+import { a11yDevtoolsPlugin } from "@tanstack/devtools-a11y/react";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import type { QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
@@ -82,6 +82,7 @@ function RootDocument({ children }: { readonly children: React.ReactNode }) {
               name: "TanStack Router",
               render: <TanStackRouterDevtoolsPanel />,
             },
+            a11yDevtoolsPlugin(),
           ]}
         />
 

@@ -17,6 +17,7 @@
       "@/*": ["./src/*"]
     },
     "noEmit": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": ["node", "vite/client"]
   }
 }

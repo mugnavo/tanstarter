@@ -49,6 +49,7 @@
     "@babel/core": "^7.29.0",
     "@rolldown/plugin-babel": "^0.2.1",
     "@tailwindcss/vite": "^4.2.1",
+    "@tanstack/devtools-a11y": "^0.1.1",
     "@tanstack/devtools-vite": "^0.6.0",
     "@tanstack/eslint-plugin-query": "^5.91.4",
     "@tanstack/eslint-plugin-router": "^1.161.5",

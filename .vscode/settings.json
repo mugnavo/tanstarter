@@ -35,8 +35,6 @@
   // enable oxlint + oxfmt
   "oxc.enable": true,
 
-  // set oxfmt as default formatter for json, ts, tsx, js, jsx, html, css
-  "[json][jsonc][typescript][typescriptreact][javascript][javascriptreact][html][css]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  }
+  // set oxfmt as default formatter
+  "editor.defaultFormatter": "oxc.oxc-vscode"
 }
