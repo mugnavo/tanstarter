@@ -29,10 +29,11 @@ pnpm create mugnavo
 
 2. Create a `.env` file based on [`.env.example`](./.env.example).
 
-3. Push the schema to your database with drizzle-kit:
+3. Generate the initial migration with drizzle-kit, then apply to your database:
 
-   ```bash
-   pnpm db push
+   ```sh
+   pnpm db generate
+   pnpm db migrate
    ```
 
    https://orm.drizzle.team/docs/migrations
@@ -49,11 +50,9 @@ pnpm create mugnavo
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/66acdee6-8e42-436f-9943-a67cad998f63/deploy-status)](https://app.netlify.com/projects/mugnavo-tanstarter/deploys)
 
-The [vite config](./vite.config.ts#L12-L13) is currently configured to use Nitro to deploy on Netlify, but supports many other [deployment presets](https://nitro.build/deploy) like Vercel and Node.
+The [vite config](./vite.config.ts#L19-L20) is configured to use Nitro by default, which supports many [deployment presets](https://nitro.build/deploy) like Netlify, Vercel, Node.js, and more.
 
-While Nitro provides a great multi-provider default, the official [@netlify/vite-plugin-tanstack-start](https://npmx.dev/package/@netlify/vite-plugin-tanstack-start) is also available for Netlify deployments.
-
-Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) for deploying to other platforms.
+Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) for more information.
 
 ## Issue watchlist
 
@@ -88,7 +87,7 @@ We use **pnpm** by default, but you can modify these scripts in [package.json](.
 
 Code in this template is public domain via [Unlicense](./LICENSE). Feel free to remove or replace for your own project.
 
-## Also check out
+## Ecosystem
 
 - [@tanstack/intent](https://tanstack.com/intent/latest/docs/getting-started/quick-start-consumers) - Up-to-date skills for your AI agents, auto-synchronized from your installed dependencies.
 - [awesome-tanstack-start](https://github.com/Balastrong/awesome-tanstack-start) - A curated list of awesome resources for TanStack Start.

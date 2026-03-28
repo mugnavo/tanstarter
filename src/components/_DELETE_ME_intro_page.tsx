@@ -77,8 +77,8 @@ export function IntroPageDeleteMe() {
                   <span className="mr-2 hidden text-muted-foreground/70 select-none sm:inline">
                     $
                   </span>
-                  {/* oxlint-disable-next-line eslint-plugin-jsx-a11y/click-events-have-key-events eslint-plugin-jsx-a11y/no-static-element-interactions */}
-                  <span className="select-all" onClick={copyToClipboard} tabIndex={0}>
+                  {/* oxlint-disable-next-line jsx_a11y/click-events-have-key-events jsx_a11y/no-static-element-interactions */}
+                  <span className="select-all" onClick={copyToClipboard}>
                     {cloneCommand}
                   </span>
                 </code>
