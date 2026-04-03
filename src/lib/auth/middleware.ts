@@ -4,7 +4,6 @@ import { setResponseStatus } from "@tanstack/react-start/server";
 import { _getUser } from "@/lib/auth/functions";
 
 // https://tanstack.com/start/latest/docs/framework/react/guide/middleware
-// These are example middlewares that you can modify and use in your server functions or routes.
 
 /**
  * Middleware to force authentication on server requests (including server functions), and add the user to the context.

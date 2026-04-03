@@ -8,7 +8,7 @@ import { $getUser } from "./functions";
  */
 export const authQueryOptions = () =>
   queryOptions({
-    queryKey: ["user"],
+    queryKey: ["auth"],
     queryFn: ({ signal }) => $getUser({ signal }),
   });
 
