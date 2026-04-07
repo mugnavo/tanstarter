@@ -25,7 +25,8 @@ skills:
 - task: "general TanStack Router and @tanstack/react-router docs for routes, layouts, route tree, and navigation"
   load: "node_modules/@tanstack/react-router/dist/llms/index.js"
 - task: "general TanStack Start and @tanstack/react-start docs for app structure, patterns, and server features"
-load: "node_modules/@tanstack/react-start/skills/react-start/SKILL.md"
+  load: "node_modules/@tanstack/react-start/skills/react-start/SKILL.md"
+
 <!-- intent-skills:end -->
 
 ## TanStack Docs
