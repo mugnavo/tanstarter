@@ -35,6 +35,9 @@
   // enable oxlint + oxfmt
   "oxc.enable": true,
 
+  // oxfmt via vite+
+  "oxc.fmt.configPath": "./vite.config.ts",
+
   // set oxfmt as default formatter
   "editor.defaultFormatter": "oxc.oxc-vscode"
 }
