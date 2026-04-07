@@ -14,6 +14,7 @@
 - [Auth patterns](.agents/auth.md) - Route guards, middleware, auth utilities
 - [TypeScript conventions](.agents/typescript.md) - Casting rules, prefer type inference
 - [Workflow](.agents/workflow.md) - Workflow commands, validation approach
+- [Vite+](.agents/vite-plus.md) - Vite+ commands, common pitfalls
 
 <!-- intent-skills:start -->
 
@@ -24,12 +25,13 @@ skills:
 - task: "general TanStack Router and @tanstack/react-router docs for routes, layouts, route tree, and navigation"
   load: "node_modules/@tanstack/react-router/dist/llms/index.js"
 - task: "general TanStack Start and @tanstack/react-start docs for app structure, patterns, and server features"
-load: "node_modules/@tanstack/react-start/skills/react-start/SKILL.md"
+  load: "node_modules/@tanstack/react-start/skills/react-start/SKILL.md"
+
 <!-- intent-skills:end -->
 
 ## TanStack Docs
 
-Use `pnpm tanstack` (which is aliased to `pnpm dlx @tanstack/cli@latest` in `package.json`) to look up TanStack documentation. Always pass `--json` for machine-readable output.
+Use `pnpm tanstack` (which is aliased to `vpx @tanstack/cli@latest` in `package.json`) to look up TanStack documentation. Always pass `--json` for machine-readable output.
 
 ```bash
 # List TanStack libraries (optionally filter by --group state|headlessUI|performance|tooling)
