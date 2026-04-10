@@ -73,7 +73,7 @@ export function IntroPageDeleteMe() {
             <div className="group flex items-center justify-between rounded-lg border border-border bg-card p-4">
               <div className="flex items-center gap-3 overflow-hidden">
                 <TerminalIcon className="hidden size-4 shrink-0 text-muted-foreground/70 sm:inline" />
-                <code className="overflow-hidden font-mono text-sm text-ellipsis whitespace-nowrap text-primary md:text-base">
+                <code className="overflow-hidden font-mono text-sm text-ellipsis whitespace-nowrap md:text-base">
                   <span className="mr-2 hidden text-muted-foreground/70 select-none sm:inline">
                     $
                   </span>
@@ -88,11 +88,7 @@ export function IntroPageDeleteMe() {
                 className="ml-4 shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
                 title="Copy command"
               >
-                {isCopied ? (
-                  <CheckIcon className="size-5 text-primary" />
-                ) : (
-                  <CopyIcon className="size-5" />
-                )}
+                {isCopied ? <CheckIcon className="size-5" /> : <CopyIcon className="size-5" />}
               </button>
             </div>
           </div>
@@ -165,7 +161,7 @@ export function IntroPageDeleteMe() {
             href="https://mugnavo.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 text-primary underline decoration-border transition-all hover:decoration-primary"
+            className="flex items-center gap-1 underline decoration-border transition-all hover:decoration-foreground"
           >
             Mugnavo
             <ExternalLinkIcon className="size-4" />
