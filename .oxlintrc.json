@@ -37,34 +37,26 @@
     "eslint-tanstack-query/no-void-query-fn": "warn",
     "eslint-tanstack-query/mutation-property-order": "warn",
 
-    // ref: https://github.com/TheAlexLichter/oxlint-react-compiler-rules/issues/1
+    // ref:
+    // - https://github.com/TheAlexLichter/oxlint-react-compiler-rules/issues/1
+    // - https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#custom-configuration
     // Recommended rules (from LintRulePreset.Recommended)
     "react-hooks-js/config": "error",
     "react-hooks-js/error-boundaries": "error",
     "react-hooks-js/gating": "error",
     "react-hooks-js/globals": "error",
     "react-hooks-js/immutability": "error",
-    "react-hooks-js/incompatible-library": "error",
+    "react-hooks-js/incompatible-library": "warn",
     "react-hooks-js/preserve-manual-memoization": "error",
     "react-hooks-js/purity": "error",
     "react-hooks-js/refs": "error",
     "react-hooks-js/set-state-in-effect": "warn",
     "react-hooks-js/set-state-in-render": "error",
     "react-hooks-js/static-components": "error",
-    "react-hooks-js/unsupported-syntax": "error",
+    "react-hooks-js/unsupported-syntax": "warn",
     "react-hooks-js/use-memo": "error",
     // Recommended-latest rules (from LintRulePreset.RecommendedLatest)
-    "react-hooks-js/void-use-memo": "error",
-    // Off rules (LintRulePreset.Off) - not enabled by default
-    "react-hooks-js/capitalized-calls": "off",
-    "react-hooks-js/fbt": "off",
-    "react-hooks-js/hooks": "off",
-    "react-hooks-js/invariant": "off",
-    "react-hooks-js/memoized-effect-dependencies": "off",
-    "react-hooks-js/no-deriving-state-in-effects": "off",
-    "react-hooks-js/rule-suppression": "off",
-    "react-hooks-js/syntax": "off",
-    "react-hooks-js/todo": "off"
+    "react-hooks-js/void-use-memo": "error"
   },
   "ignorePatterns": [
     "dist",
