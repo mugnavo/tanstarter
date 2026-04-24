@@ -16,19 +16,18 @@
 
 <!-- intent-skills:start -->
 
-# Skill mappings - when working in these areas, load the linked skill file into context.
+## Skill Loading
 
-skills:
+Before substantial work:
 
-- task: "general TanStack Router and @tanstack/react-router docs for routes, layouts, route tree, and navigation"
-  load: "node_modules/@tanstack/react-router/dist/llms/index.js"
-- task: "general TanStack Start and @tanstack/react-start docs for app structure, patterns, and server features"
-load: "node_modules/@tanstack/react-start/skills/react-start/SKILL.md"
+- Skill check: run `pnpm intent list`, or use skills already listed in context.
+- Skill guidance: if one local skill clearly matches the task, run `pnpm intent load <package>#<skill>` and follow the returned `SKILL.md`.
+- Multiple matches: prefer the most specific local skill for the package or concern you are changing; load additional skills only when the task spans multiple packages or concerns.
 <!-- intent-skills:end -->
 
 ## TanStack Docs
 
-Use `pnpm tanstack` (which is aliased to `pnpm dlx @tanstack/cli@latest` in `package.json`) to look up TanStack documentation. Always pass `--json` for machine-readable output.
+Use `pnpm tanstack` (aliased to `pnpm dlx @tanstack/cli@latest`) to look up TanStack documentation. Always pass `--json` for machine-readable output.
 
 ```bash
 # List TanStack libraries (optionally filter by --group state|headlessUI|performance|tooling)
