@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/mugnavo-tanstarter-badge.png)](https://mseep.ai/app/mugnavo-tanstarter)
+
 # [TanStarter](https://github.com/mugnavo/tanstarter)
 
 <!-- scaffold:description -->
