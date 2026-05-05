@@ -61,13 +61,13 @@ Server functions wrapped in `createServerFn` can be imported statically. Never u
 // Bad: dynamic import causes bundler issues
 const rolesQuery = useQuery({
   queryFn: async () => {
-    const { $listRoles } = await import("@/utils/roles.server");
+    const { $listRoles } = await import("#utils/roles.server");
     return $listRoles({ data: {} });
   },
 });
 
 // Good: static import
-import { $listRoles } from "@/utils/roles.server";
+import { $listRoles } from "#utils/roles.server";
 
 const rolesQuery = useQuery({
   queryFn: async () => $listRoles({ data: {} }),

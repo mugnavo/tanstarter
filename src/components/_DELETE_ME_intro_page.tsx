@@ -6,10 +6,10 @@ import { Suspense } from "react";
 import { useState } from "react";
 import { toast } from "sonner";
 
-import { SignOutButton } from "@/components/sign-out-button";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { Button } from "@/components/ui/button";
-import { useAuthSuspense } from "@/lib/auth/hooks";
+import { SignOutButton } from "#components/sign-out-button";
+import { ThemeToggle } from "#components/theme-toggle";
+import { Button } from "#components/ui/button";
+import { useAuthSuspense } from "#lib/auth/hooks";
 
 /**
  * This is the intro component for TanStarter, which you may delete after creating the project.

@@ -13,9 +13,7 @@
     "target": "ES2022",
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "@/*": ["./src/*"]
-    },
+    "resolvePackageJsonImports": true,
     "noEmit": true,
     "strictNullChecks": true,
     "types": ["node", "vite/client"]

@@ -4,12 +4,12 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { GalleryVerticalEndIcon, LoaderCircleIcon } from "lucide-react";
 import { toast } from "sonner";
 
-import { SignInSocialButton } from "@/components/sign-in-social-button";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { authClient } from "@/lib/auth/auth-client";
-import { authQueryOptions } from "@/lib/auth/queries";
+import { SignInSocialButton } from "#components/sign-in-social-button";
+import { Button } from "#components/ui/button";
+import { Input } from "#components/ui/input";
+import { Label } from "#components/ui/label";
+import { authClient } from "#lib/auth/auth-client";
+import { authQueryOptions } from "#lib/auth/queries";
 
 export const Route = createFileRoute("/_guest/signup")({
   component: SignupForm,
