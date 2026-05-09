@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import { useAuthSuspense } from "@/lib/auth/hooks";
+import { useAuthSuspense } from "#/lib/auth/hooks";
 
 export const Route = createFileRoute("/_auth/app/")({
   component: AppIndex,
