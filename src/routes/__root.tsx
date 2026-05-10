@@ -5,11 +5,11 @@ import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
 import { createRootRouteWithContext, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 
-import { ThemeProvider } from "@/components/theme-provider";
-import { Toaster } from "@/components/ui/sonner";
-import type { AuthQueryResult } from "@/lib/auth/queries";
+import { ThemeProvider } from "#/components/theme-provider";
+import { Toaster } from "#/components/ui/sonner";
+import type { AuthQueryResult } from "#/lib/auth/queries";
 
-import appCss from "@/styles.css?url";
+import appCss from "#/styles.css?url";
 
 interface MyRouterContext {
   queryClient: QueryClient;
