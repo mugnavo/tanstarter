@@ -12,9 +12,6 @@ export default defineConfig({
   define: {
     __APP_VERSION__: JSON.stringify(version),
   },
-  resolve: {
-    tsconfigPaths: true,
-  },
   server: {
     port: 3000,
   },
