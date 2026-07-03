@@ -11,7 +11,7 @@ Don't build after every change. If lint passes; assume changes work.
 
 ## Testing
 
-No testing framework is currently set up. Prefer lint checks for now.
+Vitest hasn't been set up yet. Prefer lint checks for now.
 
 ## Formatting
 
