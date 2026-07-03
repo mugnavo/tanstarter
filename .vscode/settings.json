@@ -35,10 +35,16 @@
   // enable oxlint + oxfmt
   "oxc.enable": true,
 
+  // oxfmt via vite+
+  "oxc.fmt.configPath": "./vite.config.ts",
+
+  // set oxfmt as default formatter
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+
   // format on save and paste
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
 
-  // set oxfmt as default formatter
-  "editor.defaultFormatter": "oxc.oxc-vscode"
+  // vite+ for npm scripts
+  "npm.scriptRunner": "vp"
 }

@@ -1,5 +1,8 @@
 # [TanStarter](https://github.com/mugnavo/tanstarter)
 
+> [!IMPORTANT]
+> This template now requires [Vite+ `vp`](https://viteplus.dev/guide/#install-vp) to be installed, and uses [pnpm](https://pnpm.io/installation) by default.
+
 <!-- scaffold:description -->
 
 A minimal starter template for 🏝️ TanStack Start. [→ Preview here](https://tanstarter.mugnavo.com/)
@@ -14,12 +17,20 @@ pnpm create mugnavo
 - [Vite 8](https://vite.dev) + [Nitro v3](https://nitro.build/)
 - [Drizzle ORM](https://orm.drizzle.team/) + PostgreSQL
 - [Better Auth](https://better-auth.com/)
-- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter.html)
+- [Vite Plus](https://viteplus.dev/) + [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter.html)
 
 > [!TIP]
-> This template is also available as a monorepo, powered by [Vite+](https://viteplus.dev/) and pnpm. See [mugnavo/tanstarter-plus](https://github.com/mugnavo/tanstarter-plus).
+> This template is also available as a monorepo, powered by Vite+ and pnpm workspaces. See [mugnavo/tanstarter-monorepo](https://github.com/mugnavo/tanstarter-monorepo).
 
 ## Getting Started
+
+#### Prerequisites
+
+- [Node.js](https://nodejs.org/en/download) >= 24
+- [Vite Plus](https://viteplus.dev/guide/#install-vp) (`vp`)
+- [pnpm](https://pnpm.io/installation) >= 11
+
+#### Setup
 
 1. [Use this template](https://github.com/new?template_name=tanstarter&template_owner=mugnavo) or create a project using our CLI:
 
@@ -64,11 +75,11 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 
 #### Upgrading dependencies
 
-Dependency versions are pinned, so they may be slightly outdated when you create your project. To selectively upgrade packages, run `pnpm deps` or `pnx taze@latest -Ilw --maturity-period 3`.
+Dependency versions are pinned, so they may be slightly outdated when you create your project. To selectively upgrade packages, run `pnpm deps` or `vpx taze@latest -Ilw --maturity-period 3`.
 
 #### Scripts
 
-We use **pnpm** by default, but you can modify these scripts in [package.json](./package.json) to use your preferred package manager.
+We use **pnpm** by default, but you can modify the scripts in [package.json](./package.json) to use your preferred package manager.
 
 - **`auth:generate`** - Regenerate the [auth db schema](./src/lib/db/schema/auth.schema.ts) if you've made changes to your Better Auth [config](./src/lib/auth/auth.ts).
 - **`db`** - Run [drizzle-kit](https://orm.drizzle.team/docs/kit-overview) commands. (e.g. `pnpm db generate`, `pnpm db studio`)
@@ -93,5 +104,5 @@ Code in this template is public domain via [Unlicense](./LICENSE). Feel free to 
 
 ## Related templates
 
-- [mugnavo/tanstarter-plus](https://github.com/mugnavo/tanstarter-plus) - A minimal monorepo version of this template, powered by Vite+ and pnpm workspaces.
-- [tsu-moe/tsu-stack](https://github.com/tsu-moe/tsu-stack) - An opinionated and batteries-included monorepo template from Luzefiru, built on tanstarter-plus, with Paraglide.js (i18n), Hono, oRPC, and more.
+- [mugnavo/tanstarter-monorepo](https://github.com/mugnavo/tanstarter-monorepo) - A minimal monorepo version of this template, powered by Vite+ and pnpm workspaces.
+- [tsu-moe/tsu-stack](https://github.com/tsu-moe/tsu-stack) - An opinionated and batteries-included monorepo template from Luzefiru, built on tanstarter-monorepo, with Paraglide.js (i18n), Hono, oRPC, and more.
