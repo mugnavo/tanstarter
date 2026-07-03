@@ -1,0 +1,16 @@
+allowBuilds:
+  esbuild: true
+
+# https://pnpm.io/settings#minimumreleaseage
+# https://pnpm.io/supply-chain-security#delay-dependency-updates
+minimumReleaseAge: 1440
+
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@0.2.2
+overrides:
+  vite: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"
