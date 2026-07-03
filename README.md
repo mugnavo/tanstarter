@@ -61,7 +61,7 @@ pnpm create mugnavo
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/66acdee6-8e42-436f-9943-a67cad998f63/deploy-status)](https://app.netlify.com/projects/mugnavo-tanstarter/deploys)
 
-The [vite config](./vite.config.ts#L19-L20) is configured to use Nitro by default, which supports many [deployment presets](https://nitro.build/deploy) like Netlify, Vercel, Node.js, and more.
+The [vite config](./vite.config.ts#L127-L128) is configured to use Nitro by default, which supports many [deployment presets](https://nitro.build/deploy) like Netlify, Vercel, Node.js, and more.
 
 Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) for more information.
 
@@ -70,6 +70,7 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 - [Router/Start issues](https://github.com/TanStack/router/issues) - TanStack Start is in RC.
 - [Devtools releases](https://github.com/TanStack/devtools/releases) - TanStack Devtools is in alpha and may still have breaking changes.
 - [Nitro v3 beta](https://nitro.build/blog/v3-beta) - The template is configured with Nitro v3 beta by default.
+- [Vite+ releases](https://github.com/voidzero-dev/vite-plus/releases) - Vite+ is in beta.
 
 ## Goodies
 
