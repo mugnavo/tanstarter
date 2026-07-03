@@ -27,8 +27,8 @@ pnpm create mugnavo
 #### Prerequisites
 
 - [Node.js](https://nodejs.org/en/download) >= 24
-- [Vite Plus](https://viteplus.dev/guide/#install-vp) (`vp`)
 - [pnpm](https://pnpm.io/installation) >= 11
+- [Vite Plus](https://viteplus.dev/guide/#install-vp) (`vp`)
 
 #### Setup
 
