@@ -82,7 +82,7 @@ Dependency versions are pinned, so they may be slightly outdated when you create
 
 #### Scripts
 
-We use **pnpm** by default, but you can modify the scripts in [package.json](./package.json) to use your preferred package manager.
+Check [package.json](./package.json) for the full list of available scripts.
 
 - **`auth:generate`** - Regenerate the [auth db schema](./src/lib/db/schema/auth.schema.ts) if you've made changes to your Better Auth [config](./src/lib/auth/auth.ts).
 - **`db`** - Run [drizzle-kit](https://orm.drizzle.team/docs/kit-overview) commands. (e.g. `vpr db generate`, `vpr db studio`)
